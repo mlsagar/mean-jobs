@@ -1,0 +1,13 @@
+<div *ngIf="job">
+    <h3>{{job.title}}</h3>  
+    <h3>{{job.location.street}}, {{job.location.city}}, {{job.location.state}}, {{job.location.postal}}</h3>
+    <h3>
+        {{job.description}}
+    </h3>
+    <h3>
+        {{job.skills}}
+    </h3>
+    <h3>
+        {{job.postedDate | date: "MM/dd/yyyy"}}
+    </h3>  
+</div>
